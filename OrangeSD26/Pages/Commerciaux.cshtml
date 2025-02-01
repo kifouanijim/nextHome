@@ -1,0 +1,186 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Gestion des commerciaux";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Module de gestion des Commerciaux (Ajouter/Suppression/Mise à jour).</p>
+@{
+    string action = "";
+    int idpersonne = 0;
+    Commercial leCommercial = null;
+    if (! string.IsNullOrEmpty(Request.Query["action"]))
+    {
+        action = Request.Query["action"];
+        idpersonne = Int16.Parse(Request.Query["idpersonne"]);
+        if(action.Equals("sup"))
+        {
+            Controleur.DeleteCommercial(idpersonne);
+        }
+        else if (action.Equals("edit"))
+        {
+            leCommercial = Controleur.SelectWhereCommercial(idpersonne);
+
+        }
+    }
+}
+<form method="post">
+    <table>
+        <tr>
+            <td>Nom : </td>
+            <td><input type="text" name="nom" value="@Html.Raw((leCommercial==null)?"":leCommercial.Nom)" /></td>
+        </tr>
+        <tr>
+            <td>Prénom : </td>
+            <td><input type="text" name="prenom" value="@Html.Raw((leCommercial==null)?"":leCommercial.Prenom)" /></td>
+        </tr>
+        <tr>
+            <td>Email : </td>
+            <td><input type="text" name="email" value="@Html.Raw((leCommercial==null)?"":leCommercial.Email)" /></td>
+        </tr>
+        <tr>
+            <td>MDP : </td>
+            <td><input type="password" name="mdp" value="@Html.Raw((leCommercial==null)?"":leCommercial.Mdp)" /></td>
+        </tr>
+        <tr>
+            <td>Secteur d'activité : </td>
+            <td><input type="text" name="SecteurAct" value="@Html.Raw((leCommercial==null)?"":leCommercial.SecteurAct)" /></td>
+        </tr>
+        <tr>
+            <td>Commission : </td>
+            <td><input type="number" name="commission" value="@Html.Raw((leCommercial==null)?"":leCommercial.Commission)" /></td>
+        </tr>
+        <tr>
+            <td><input type="reset" name="Annuler" value="Annuler" /></td>
+            <td><input type="submit" 
+                @Html.Raw((leCommercial==null)? " name='Valider' value='Valider' " : " name='Modifier' value='Modifier' ")   
+                /></td>
+        </tr>
+    </table>
+</form>
+@{
+    string nom, prenom, email, mdp, secteurAct;
+    float commission ;
+    string message = "";
+    if (Request.Method == "POST" && !string.IsNullOrEmpty(Request.Form["Modifier"]))
+    {
+        idpersonne = Int16.Parse(Request.Query["idpersonne"]);
+        nom = Request.Form["nom"];
+        prenom = Request.Form["prenom"];
+        email = Request.Form["email"];
+        mdp = Request.Form["mdp"];
+        secteurAct = Request.Form["secteurAct"];
+        List<string> donnees = new List<string>();
+        donnees.Add(nom);
+        donnees.Add(prenom);
+        donnees.Add(email);
+        donnees.Add(mdp);
+        donnees.Add(Request.Form["commission"]);
+        if (Controleur.ControlerDonnees(donnees))
+        {
+            try
+            {
+                commission = float.Parse(Request.Form["commission"]);
+            }
+            catch (NotFiniteNumberException exp)
+            {
+                commission = 2;
+            }
+            Commercial unCommercial = new Commercial(idpersonne, nom, prenom, email, mdp, secteurAct, commission);
+            Controleur.UpdateCommercial(unCommercial);
+            message = "Modification réussie du commercial.";
+        }
+        else
+        {
+            message = "Veuillez remplir tous les champs.";
+        }
+
+    }
+    if (Request.Method == "POST" && !string.IsNullOrEmpty(Request.Form["Valider"]))
+    {
+        nom = Request.Form["nom"];
+        prenom = Request.Form["prenom"];
+        email = Request.Form["email"];
+        mdp = Request.Form["mdp"];
+        secteurAct = Request.Form["secteurAct"];
+        List<string> donnees = new List<string>();
+        donnees.Add(nom);
+        donnees.Add(prenom);
+        donnees.Add(email);
+        donnees.Add(mdp);
+        donnees.Add(Request.Form["commission"]);
+        if (Controleur.ControlerDonnees(donnees))
+        {
+            try{
+                commission = float.Parse(Request.Form["commission"]);
+            }
+            catch (NotFiniteNumberException exp)
+            {
+                commission = 2;
+            }
+            Commercial unCommercial = new Commercial(nom, prenom, email, mdp, secteurAct, commission);
+            Controleur.InsertCommercial(unCommercial);
+            message = "Insertion réussie du commercial.";
+        }
+        else
+        {
+            message = "Veuillez remplir tous les champs.";
+        }
+
+    }
+}
+@Html.Raw(message)
+
+Filtre : <form method="post">
+    <input type="text" name="filtre" />
+    <input type="submit" name="Filtrer" value="Filtrer" />
+</form>
+<br />
+
+
+<table border="1">
+    <tr>
+        <td>Id Personne </td>
+        <td>Nom </td>
+        <td>Prénom </td>
+        <td>Email </td>
+        <td>Secteur act </td>
+        <td>Commission </td>
+        <td>Operations </td>
+    </tr>
+
+    @{
+
+
+        string chaine = "";
+        List<Commercial> lesCommerciaux = null;
+        if (Request.Method == "POST" && !string.IsNullOrEmpty(Request.Form["Filtrer"]))
+        {
+            string filtre = Request.Form["filtre"];
+            lesCommerciaux = Controleur.SelectLikeCommerciaux(filtre);
+        }
+        else
+        {
+
+            lesCommerciaux = Controleur.SelectAllCommerciaux();
+        }
+        foreach (Commercial unCom in lesCommerciaux)
+        {
+            chaine += "<tr><td>" + unCom.IdPersonne + "</td>";
+            chaine += "<td>" + unCom.Nom + "</td>";
+            chaine += "<td>" + unCom.Prenom + "</td>";
+            chaine += "<td>" + unCom.Email + "</td>";
+            chaine += "<td>" + unCom.SecteurAct + "</td>";
+            chaine += "<td>" + unCom.Commission + "</td>";
+            chaine += "<td>";
+
+            chaine += "<a href='Commerciaux?action=sup&idpersonne="+ unCom.IdPersonne + "'> Supprimer </a>";
+            chaine += "<a href='Commerciaux?action=edit&idpersonne="+ unCom.IdPersonne + "'> Update </a>";
+            chaine += "</td>";
+            chaine += "</tr>";
+        }
+    }
+
+    @Html.Raw(chaine)
+</table>

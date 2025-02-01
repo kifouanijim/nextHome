@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|c:\\users\\fouad\\source\\repos\\orangesd26\\orangesd26\\pages\\connexion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|solutionrelative:orangesd26\\pages\\connexion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|c:\\users\\fouad\\source\\repos\\orangesd26\\orangesd26\\pages\\commerciaux.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|solutionrelative:orangesd26\\pages\\commerciaux.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|c:\\users\\fouad\\source\\repos\\orangesd26\\orangesd26\\controleur\\controleur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|solutionrelative:orangesd26\\controleur\\controleur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|c:\\users\\fouad\\source\\repos\\orangesd26\\orangesd26\\modele\\modele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|solutionrelative:orangesd26\\modele\\modele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|c:\\users\\fouad\\source\\repos\\orangesd26\\orangesd26\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|solutionrelative:orangesd26\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|c:\\users\\fouad\\source\\repos\\orangesd26\\orangesd26\\orangesd26.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\OrangeSD26.csproj|solutionrelative:orangesd26\\orangesd26.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Connexion.cshtml",
+              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\Pages\\Connexion.cshtml",
+              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Connexion.cshtml",
+              "ToolTip": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\Pages\\Connexion.cshtml",
+              "RelativeToolTip": "OrangeSD26\\Pages\\Connexion.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T16:53:29.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Commerciaux.cshtml",
+              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\Pages\\Commerciaux.cshtml",
+              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Commerciaux.cshtml",
+              "ToolTip": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\Pages\\Commerciaux.cshtml",
+              "RelativeToolTip": "OrangeSD26\\Pages\\Commerciaux.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-22T16:56:56.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrangeSD26.csproj",
+              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\OrangeSD26.csproj",
+              "RelativeDocumentMoniker": "OrangeSD26\\OrangeSD26.csproj",
+              "ToolTip": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\OrangeSD26.csproj",
+              "RelativeToolTip": "OrangeSD26\\OrangeSD26.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-22T16:53:18.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Modele.cs",
+              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\modele\\Modele.cs",
+              "RelativeDocumentMoniker": "OrangeSD26\\modele\\Modele.cs",
+              "ToolTip": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\modele\\Modele.cs",
+              "RelativeToolTip": "OrangeSD26\\modele\\Modele.cs",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAuwBEBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T16:55:20.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Controleur.cs",
+              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\controleur\\Controleur.cs",
+              "RelativeDocumentMoniker": "OrangeSD26\\controleur\\Controleur.cs",
+              "ToolTip": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\controleur\\Controleur.cs",
+              "RelativeToolTip": "OrangeSD26\\controleur\\Controleur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T16:55:09.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\fouad\\source\\repos\\OrangeSD26\\OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-22T16:50:36.312Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

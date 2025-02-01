@@ -1,0 +1,104 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Connexion";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p> Connexion au site Intranet Orange </p>
+<center>
+    <form method="post">
+        <table>
+            <tr>
+                <td> Email </td>
+                <td> <input type="text" name="email" /></td>
+            </tr>
+            <tr>
+                <td> MDP </td>
+                <td> <input type="password" name="mdp" /></td>
+            </tr>
+            <tr>
+                <td> <input type="reset" name="Annuler" value="Annuler" /> </td>
+                <td> <input type="submit" name="Valider" value="Valider" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <br />
+    <a href="Connexion?action=inscription"> Inscription </a>
+</center>
+
+@{
+    string form = "";
+    if (!string.IsNullOrEmpty(Request.Query["action"]) && Request.Query["action"].Equals("inscription"))
+    {
+        form = @"<form method='post'> <table>
+ <tr>
+<td> NOM : </td>
+<td> <input type='text' name='nom'   /></td>
+</tr>
+<tr>
+<td> Prénom : </td>
+<td> <input type= 'text' name = 'prenom' /></td>
+</tr>
+<tr>
+<td> Email : </td>
+<td> <input type= 'text' name='email' /></td>
+</tr>
+<tr>
+<td> MDP : </td>
+<td> <input type= 'password' name = 'mdp' /></td>
+</tr>
+<tr>
+<td> Secteur Activité : </td>
+<td> <input type= 'text' name = 'secteurAct' ></td>
+</tr>
+<tr>
+<td> Commission : </td>
+<td> <input type= 'number' name = 'commission' /></td>
+</tr>
+<tr>
+<td> <input type= 'reset' name = 'Annuler' value = 'Annuler' />  </td>
+<td> <input type= 'submit'
+                          name ='Valider' value='Valider' /></td>
+</tr>
+</table>
+</form>";
+    }
+}
+
+@Html.Raw(form)
+
+@{
+    string message = "";
+    string email, mdp;
+    if (Request.Method == "POST" && !string.IsNullOrEmpty(Request.Form["Valider"]))
+    {
+        email = Request.Form["email"];
+        mdp = Request.Form["mdp"];
+
+        //controle des données
+        List<string> donnees = new List<string>();
+        donnees.Add(email);
+        donnees.Add(mdp);
+
+        if (Controleur.ControlerDonnees(donnees))
+        {
+            Commercial unCommercial = Controleur.SelectWhereCommercial(email, mdp);
+            if (unCommercial == null)
+            {
+                message = "Veuillez vérifier vos identifiants.";
+            }
+            else
+            {
+                message = "Bienvenue M/Mm " + unCommercial.Nom + "  " + unCommercial.Prenom;
+
+            }
+        }
+        else
+        {
+            message = "Veuillez remplir tous les champs.";
+        }
+    }
+}
+@Html.Raw(message)
