@@ -2,7 +2,7 @@
 using MySql.Data.MySqlClient;
 using System.Data.Common;
 using System.Diagnostics;
-namespace OrangeSD25
+namespace Nexthome
 {
 	public class Modele
 	{
@@ -33,9 +33,9 @@ namespace OrangeSD25
 
 		}
 		/******************** Gestion des Commerciaux  ************/
-		public void InsertCommercial(Commercial unCommercial)
-		{
-			string requete = "call insertCommercial(@nom, @prenom, @email, @mdp, @secteurAct, @commission); ";
+		public void insertagentvente(Agentvente unAgentvente)
+        {
+			string requete = "call insertagentvente(@nom, @prenom, @email, @mdp, @departement, @commission); ";
 			MySqlCommand uneCmde = null;
 			try
 			{
@@ -43,12 +43,12 @@ namespace OrangeSD25
 				uneCmde = this.maConnexion.CreateCommand();
 				uneCmde.CommandText = requete;
 				//faire la correspondance entre les variables SQL et les données du commercial
-				uneCmde.Parameters.AddWithValue("@nom", unCommercial.Nom);
-                uneCmde.Parameters.AddWithValue("@prenom", unCommercial.Prenom);
-                uneCmde.Parameters.AddWithValue("@email", unCommercial.Email);
-                uneCmde.Parameters.AddWithValue("@mdp", unCommercial.Mdp);
-                uneCmde.Parameters.AddWithValue("@secteurAct", unCommercial.SecteurAct);
-                uneCmde.Parameters.AddWithValue("@commission", unCommercial.Commission);
+				uneCmde.Parameters.AddWithValue("@nom", unAgentvente.Nom);
+                uneCmde.Parameters.AddWithValue("@prenom", unAgentvente.Prenom);
+                uneCmde.Parameters.AddWithValue("@email", unAgentvente.Email);
+                uneCmde.Parameters.AddWithValue("@mdp", unAgentvente.Mdp);
+                uneCmde.Parameters.AddWithValue("@departement", unAgentvente.Departement);
+                uneCmde.Parameters.AddWithValue("@commission", unAgentvente.Commission);
 				//Execution de la requete
 				uneCmde.ExecuteNonQuery();
                 Debug.WriteLine(" execution requete: " + requete);
@@ -59,9 +59,9 @@ namespace OrangeSD25
                 Debug.WriteLine("Erreur execution requete: " + requete);
             }
         }
-        public void DeleteCommercial(int idCommercial)
+        public void deleteAgentvente(int idAgentvente)
         {
-            string requete = "call deleteCommercial(@idCommercial); ";
+            string requete = "call deleteAgentvente(@idAgentvente); ";
             MySqlCommand uneCmde = null;
             try
             {
@@ -69,7 +69,7 @@ namespace OrangeSD25
                 uneCmde = this.maConnexion.CreateCommand();
                 uneCmde.CommandText = requete;
                 //faire la correspondance entre les variables SQL et les données du commercial
-                uneCmde.Parameters.AddWithValue("@idCommercial", idCommercial);
+                uneCmde.Parameters.AddWithValue("@idAgentvente", idAgentvente);
                //Execution de la requete
                 uneCmde.ExecuteNonQuery();
 
@@ -80,9 +80,9 @@ namespace OrangeSD25
                 Debug.WriteLine("Erreur execution requete: " + requete);
             }
         }
-        public void UpdateCommercial(Commercial unCommercial)
+        public void updateAgentvente(Agentvente unAgentvente)
         {
-            string requete = "call updateCommercial(@idpersonne,@nom, @prenom, @email, @mdp, @secteurAct, @commission); ";
+            string requete = "call updateAgentvente(@idagent,@nom, @prenom, @email, @mdp, @departement, @commission); ";
             MySqlCommand uneCmde = null;
             try
             {
@@ -90,13 +90,13 @@ namespace OrangeSD25
                 uneCmde = this.maConnexion.CreateCommand();
                 uneCmde.CommandText = requete;
                 //faire la correspondance entre les variables SQL et les données du commercial
-                uneCmde.Parameters.AddWithValue("@idpersonne", unCommercial.IdPersonne);
-                uneCmde.Parameters.AddWithValue("@nom", unCommercial.Nom);
-                uneCmde.Parameters.AddWithValue("@prenom", unCommercial.Prenom);
-                uneCmde.Parameters.AddWithValue("@email", unCommercial.Email);
-                uneCmde.Parameters.AddWithValue("@mdp", unCommercial.Mdp);
-                uneCmde.Parameters.AddWithValue("@secteurAct", unCommercial.SecteurAct);
-                uneCmde.Parameters.AddWithValue("@commission", unCommercial.Commission);
+                uneCmde.Parameters.AddWithValue("@idagent", unAgentvente.IdAgent);
+                uneCmde.Parameters.AddWithValue("@nom", unAgentvente.Nom);
+                uneCmde.Parameters.AddWithValue("@prenom", unAgentvente.Prenom);
+                uneCmde.Parameters.AddWithValue("@email", unAgentvente.Email);
+                uneCmde.Parameters.AddWithValue("@mdp", unAgentvente.Mdp);
+                uneCmde.Parameters.AddWithValue("@departement", unAgentvente.Departement);
+                uneCmde.Parameters.AddWithValue("@commission", unAgentvente.Commission);
                 //Execution de la requete
                 uneCmde.ExecuteNonQuery();
 
@@ -107,10 +107,10 @@ namespace OrangeSD25
                 Debug.WriteLine("Erreur execution requete: " + requete);
             }
         }
-        public List<Commercial> SelectAllCommerciaux()
+        public List<Agentvente> SelectAllAgentvente()
         {
-            List<Commercial> lesCommerciaux = new List<Commercial>();
-            string requete = "select * from v_liste_commerciaux ; ";
+            List<Agentvente> lesAgentvente = new List<Agentvente>();
+            string requete = "select * from v_liste_agentvente ; ";
             MySqlCommand uneCmde = null;
             try
             {
@@ -127,14 +127,14 @@ namespace OrangeSD25
                         //tant que il y a des lignes
                         while (unReader.Read())
                         {
-                            Commercial unCommercial = new Commercial(
+                            Agentvente unAgentvente = new Agentvente(
                                 unReader.GetInt16(0),
                                 unReader.GetString(1), unReader.GetString(2),
                                 unReader.GetString(3), unReader.GetString(4),
                                 unReader.GetString(5), unReader.GetFloat(6)
                                 );
                             //ajout de ce commercial à la liste lesCommerciaux
-                            lesCommerciaux.Add(unCommercial);
+                            lesAgentvente.Add(unAgentvente);
 
                         }
                         unReader.Close(); 
@@ -142,7 +142,7 @@ namespace OrangeSD25
                 }
                 catch (Exception exp)
                 {
-                    Debug.WriteLine("Impossible de lire les commerciaux "); 
+                    Debug.WriteLine("Impossible de lire les agents de vente "); 
                 }
 
                 this.maConnexion.Close();
@@ -152,13 +152,13 @@ namespace OrangeSD25
                 Debug.WriteLine("Erreur execution requete: " + requete);
             }
 
-            return lesCommerciaux; 
+            return lesAgentvente; 
         }
 
-        public List<Commercial> SelectLikeCommerciaux(String filtre)
+        public List<Agentvente> SelectLikeAgentvente(String filtre)
         {
-            List<Commercial> lesCommerciaux = new List<Commercial>();
-            string requete = "select * from v_liste_commerciaux where nom like @filtre or prenom like @filtre or email like @filtre or secteurAct like @filtre; ";
+            List<Agentvente> lesAgentvente = new List<Agentvente>();
+            string requete = "select * from v_liste_agentvente where nom like @filtre or prenom like @filtre or email like @filtre or departement like @filtre; ";
             MySqlCommand uneCmde = null;
             try
             {
@@ -176,14 +176,14 @@ namespace OrangeSD25
                         //tant que il y a des lignes
                         while (unReader.Read())
                         {
-                            Commercial unCommercial = new Commercial(
+                            Agentvente unAgentvente = new Agentvente(
                                 unReader.GetInt16(0),
                                 unReader.GetString(1), unReader.GetString(2),
                                 unReader.GetString(3), unReader.GetString(4),
                                 unReader.GetString(5), unReader.GetFloat(6)
                                 );
                             //ajout de ce commercial à la liste lesCommerciaux
-                            lesCommerciaux.Add(unCommercial);
+                            lesAgentvente.Add(unAgentvente);
 
                         }
                         unReader.Close();
@@ -191,7 +191,7 @@ namespace OrangeSD25
                 }
                 catch (Exception exp)
                 {
-                    Debug.WriteLine("Impossible de lire les commerciaux ");
+                    Debug.WriteLine("Impossible de lire les agents de ventes ");
                 }
 
                 this.maConnexion.Close();
@@ -201,18 +201,18 @@ namespace OrangeSD25
                 Debug.WriteLine("Erreur execution requete: " + requete);
             }
 
-            return lesCommerciaux;
+            return lesAgentvente;
         }
-        public Commercial SelectWhereCommercial (int idPersonne)
+        public Agentvente SelectWhereAgentvente (int idAgent)
         {
-            Commercial unCommercial = null;
-            string requete = "call avoirPersonne (@idpersonne); ";
+            Agentvente unAgentvente = null;
+            string requete = "call avoiragent (@idagent); ";
             MySqlCommand uneCmde = null;
             try
             {
                 this.maConnexion.Open();
                 uneCmde = this.maConnexion.CreateCommand();
-                uneCmde.Parameters.AddWithValue("@idpersonne", idPersonne); 
+                uneCmde.Parameters.AddWithValue("@idagent", idAgent); 
                 uneCmde.CommandText = requete;
                 //extraction des données des commerciaux
                 DbDataReader unReader = uneCmde.ExecuteReader(); //creation d'un curseur
@@ -224,7 +224,7 @@ namespace OrangeSD25
                         //s'il y a une ligne 
                         if (unReader.Read())
                         {
-                             unCommercial = new Commercial(
+                            unAgentvente = new Agentvente(
                                 unReader.GetInt16(0),
                                 unReader.GetString(1), unReader.GetString(2),
                                 unReader.GetString(3), unReader.GetString(4),
@@ -236,7 +236,7 @@ namespace OrangeSD25
                 }
                 catch (Exception exp)
                 {
-                    Debug.WriteLine("Impossible de lire les commerciaux ");
+                    Debug.WriteLine("Impossible de lire les agents de ventes ");
                 }
 
                 this.maConnexion.Close();
@@ -245,12 +245,12 @@ namespace OrangeSD25
             {
                 Debug.WriteLine("Erreur execution requete: " + requete);
             }
-            return unCommercial; 
+            return unAgentvente;
         }
-        public Commercial SelectWhereCommercial(string email, string mdp)
+        public Agentvente SelectWhereAgentvente(string email, string mdp)
         {
-            Commercial unCommercial = null;
-            string requete = "select * from v_liste_commerciaux where email = @email and mdp = @mdp; ";
+            Agentvente unAgentvente = null;
+            string requete = "select * from v_liste_agentvente where email = @email and mdp = @mdp; ";
             MySqlCommand uneCmde = null;
             try
             {
@@ -269,7 +269,7 @@ namespace OrangeSD25
                         //s'il y a une ligne 
                         if (unReader.Read())
                         {
-                            unCommercial = new Commercial(
+                            unAgentvente = new Agentvente(
                                unReader.GetInt16(0),
                                unReader.GetString(1), unReader.GetString(2),
                                unReader.GetString(3), unReader.GetString(4),
@@ -290,7 +290,7 @@ namespace OrangeSD25
             {
                 Debug.WriteLine("Erreur execution requete: " + requete);
             }
-            return unCommercial;
+            return unAgentvente;
         }
     }
 }

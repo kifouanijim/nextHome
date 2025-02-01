@@ -1801,9 +1801,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\OrangeSD26.csproj",
-      "projectName": "OrangeSD26",
-      "projectPath": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\OrangeSD26.csproj",
+      "projectUniqueName": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Nexthome.csproj",
+      "projectName": "Nexthome",
+      "projectPath": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Nexthome.csproj",
       "packagesPath": "C:\\Users\\fouad\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,17 +1,17 @@
 ﻿using System;
-namespace OrangeSD25 
+namespace Nexthome
 {
-    public class Technicien : Personne
+    public class Agentloc : Agent
     {
         private string qualification;
         private float salaire;
         // constructeur
-        public Technicien(int idpersonne, string nom, string prenom, string email, string mdp, string qualification, float salaire) : base(idpersonne, nom, prenom, email, mdp)
+        public Agentloc(int idagent, string nom, string prenom, string email, string mdp, string qualification, float salaire) : base(idagent, nom, prenom, email, mdp)
         {
             this.qualification = qualification;
             this.salaire = salaire;
         }
-        public Technicien(string nom, string prenom, string email, string mdp, string qualification, float salaire) : base(nom, prenom, email, mdp)
+        public Agentloc(string nom, string prenom, string email, string mdp, string qualification, float salaire) : base(nom, prenom, email, mdp)
         {
             this.qualification = qualification;
             this.salaire = salaire;

@@ -5,7 +5,7 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p> Connexion au site Intranet Orange </p>
+<p> Connexion au site NextHome </p>
 <center>
     <form method="post">
         <table>
@@ -51,7 +51,7 @@
 </tr>
 <tr>
 <td> Secteur Activité : </td>
-<td> <input type= 'text' name = 'secteurAct' ></td>
+<td> <input type= 'text' name = 'departement' ></td>
 </tr>
 <tr>
 <td> Commission : </td>
@@ -84,14 +84,14 @@
 
         if (Controleur.ControlerDonnees(donnees))
         {
-            Commercial unCommercial = Controleur.SelectWhereCommercial(email, mdp);
-            if (unCommercial == null)
+            Agentvente unAgentvente = Controleur.SelectWhereAgentvente(email, mdp);
+            if (unAgentvente == null)
             {
                 message = "Veuillez vérifier vos identifiants.";
             }
             else
             {
-                message = "Bienvenue M/Mm " + unCommercial.Nom + "  " + unCommercial.Prenom;
+                message = "Bienvenue M/Mm " + unAgentvente.Nom + "  " + unAgentvente.Prenom;
 
             }
         }

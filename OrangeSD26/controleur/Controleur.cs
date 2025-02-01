@@ -1,12 +1,12 @@
 ﻿using System;
-namespace OrangeSD25
+namespace Nexthome
 {
 	public class Controleur
 	{	//Mysql : 3306
 		//Mariadb : 3307
 		//MAc Mamp : 8889
 
-		private static Modele unModele = new Modele("localhost", "OrangeSD25", "root","");
+		private static Modele unModele = new Modele("localhost", "nexthome2", "root","");
 		public static bool ControlerDonnees (List<string> donnees)
         {
             bool ok = true;
@@ -19,35 +19,35 @@ namespace OrangeSD25
             }
             return ok;
         }
-		public static void InsertCommercial (Commercial unCommercial)
+		public static void InsertAgentvente(Agentvente unAgentvente)
 		{
 			//on controle les données du commercial avant insertion 
-			unModele.InsertCommercial(unCommercial); 
+			unModele.insertagentvente(unAgentvente); 
 		}
-        public static void UpdateCommercial(Commercial unCommercial)
+        public static void UpdateAgentvente(Agentvente unAgentvente)
         {
             //on controle les données du commercial avant mise à jour  
-            unModele.UpdateCommercial(unCommercial);
+            unModele.updateAgentvente(unAgentvente);
         }
-        public static void DeleteCommercial(int idCommercial)
+        public static void DeleteAgentvente(int idAgentvente)
         { 
-            unModele.DeleteCommercial(idCommercial);
+            unModele.deleteAgentvente(idAgentvente);
         }
-        public static Commercial SelectWhereCommercial(int idPersonne)
+        public static Agentvente SelectWhereAgentvente(int idAgent)
         {
-            return unModele.SelectWhereCommercial(idPersonne);
+            return unModele.SelectWhereAgentvente(idAgent);
         }
-        public static Commercial SelectWhereCommercial(string email, string mdp)
+        public static Agentvente SelectWhereAgentvente(string email, string mdp)
         {
-            return unModele.SelectWhereCommercial(email, mdp);
+            return unModele.SelectWhereAgentvente(email, mdp);
         }
-        public static List<Commercial> SelectAllCommerciaux()
+        public static List<Agentvente> SelectAllAgentvente()
         {
-            return unModele.SelectAllCommerciaux(); 
+            return unModele.SelectAllAgentvente(); 
         }
-        public static List<Commercial> SelectLikeCommerciaux(String filtre)
+        public static List<Agentvente> SelectLikeAgentvente(String filtre)
         {
-            return unModele.SelectLikeCommerciaux(filtre);
+            return unModele.SelectLikeAgentvente(filtre);
         }
     }
 }

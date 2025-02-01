@@ -1,30 +1,30 @@
 ﻿using System;
-namespace OrangeSD25 
+namespace Nexthome
 {
-    public class Personne
+    public class Agent
     {
-        protected int idpersonne;
+        protected int idagent;
         protected string nom, prenom, email, mdp;
 
         // constructeur 
-        public Personne(int idpersonne, string nom, string prenom, string email, string mdp)
+        public Agent(int idagent, string nom, string prenom, string email, string mdp)
         {
-            this.idpersonne = idpersonne;
+            this.idagent = idagent;
             this.nom = nom;
             this.prenom = prenom;
             this.email = email;
             this.mdp = mdp;
         }
-        public Personne(string nom, string prenom, string email, string mdp)
+        public Agent(string nom, string prenom, string email, string mdp)
         {
-            this.idpersonne = 0;
+            this.idagent = 0;
             this.nom = nom;
             this.prenom = prenom;
             this.email = email;
             this.mdp = mdp;
         }
         //get et set 
-        public int IdPersonne { get => idpersonne; set => idpersonne = value; }
+        public int IdAgent { get => idagent; set => idagent = value; }
         public string Nom { get => nom; set => nom = value; }
         public string Prenom { get => prenom; set =>  prenom = value; }
         public string Email { get => email; set => email = value; }
