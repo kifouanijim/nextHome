@@ -82,32 +82,36 @@ namespace Nexthome
         }
         public void updateAgentvente(Agentvente unAgentvente)
         {
-            string requete = "call updateAgentvente(@idagent,@nom, @prenom, @email, @mdp, @departement, @commission); ";
-            MySqlCommand uneCmde = null;
-            try
-            {
-                this.maConnexion.Open();
-                uneCmde = this.maConnexion.CreateCommand();
-                uneCmde.CommandText = requete;
-                //faire la correspondance entre les variables SQL et les données du commercial
-                uneCmde.Parameters.AddWithValue("@idagent", unAgentvente.IdAgent);
-                uneCmde.Parameters.AddWithValue("@nom", unAgentvente.Nom);
-                uneCmde.Parameters.AddWithValue("@prenom", unAgentvente.Prenom);
-                uneCmde.Parameters.AddWithValue("@email", unAgentvente.Email);
-                uneCmde.Parameters.AddWithValue("@mdp", unAgentvente.Mdp);
-                uneCmde.Parameters.AddWithValue("@departement", unAgentvente.Departement);
-                uneCmde.Parameters.AddWithValue("@commission", unAgentvente.Commission);
-                //Execution de la requete
-                uneCmde.ExecuteNonQuery();
 
-                this.maConnexion.Close();
-            }
-            catch (Exception exp)
             {
-                Debug.WriteLine("Erreur execution requete: " + requete);
+                string requete = "call updateAgentvente(@idagent,@nom, @prenom, @email, @mdp, @departement, @commission); ";
+                MySqlCommand uneCmde = null;
+                try
+                {
+                    this.maConnexion.Open();
+                    uneCmde = this.maConnexion.CreateCommand();
+                    uneCmde.CommandText = requete;
+                    //faire la correspondance entre les variables SQL et les données du commercial
+                    uneCmde.Parameters.AddWithValue("@idagent", unAgentvente.IdAgent);
+                    uneCmde.Parameters.AddWithValue("@nom", unAgentvente.Nom);
+                    uneCmde.Parameters.AddWithValue("@prenom", unAgentvente.Prenom);
+                    uneCmde.Parameters.AddWithValue("@email", unAgentvente.Email);
+                    uneCmde.Parameters.AddWithValue("@mdp", unAgentvente.Mdp);
+                    uneCmde.Parameters.AddWithValue("@departement", unAgentvente.Departement);
+                    uneCmde.Parameters.AddWithValue("@commission", unAgentvente.Commission);
+                    //Execution de la requete
+                    uneCmde.ExecuteNonQuery();
+
+                    this.maConnexion.Close();
+                }
+                catch (Exception exp)
+                {
+                    Debug.WriteLine("Erreur execution requete: " + requete);
+                }
+
             }
         }
-        public List<Agentvente> SelectAllAgentvente()
+        public List<Agentvente> selectAllAgentvente()
         {
             List<Agentvente> lesAgentvente = new List<Agentvente>();
             string requete = "select * from v_liste_agentvente ; ";
@@ -155,7 +159,7 @@ namespace Nexthome
             return lesAgentvente; 
         }
 
-        public List<Agentvente> SelectLikeAgentvente(String filtre)
+        public List<Agentvente> selectLikeAgentvente(String filtre)
         {
             List<Agentvente> lesAgentvente = new List<Agentvente>();
             string requete = "select * from v_liste_agentvente where nom like @filtre or prenom like @filtre or email like @filtre or departement like @filtre; ";
@@ -203,7 +207,7 @@ namespace Nexthome
 
             return lesAgentvente;
         }
-        public Agentvente SelectWhereAgentvente (int idAgent)
+        public Agentvente selectWhereAgentvente (int idAgent)
         {
             Agentvente unAgentvente = null;
             string requete = "call avoiragent (@idagent); ";
@@ -247,7 +251,7 @@ namespace Nexthome
             }
             return unAgentvente;
         }
-        public Agentvente SelectWhereAgentvente(string email, string mdp)
+        public Agentvente selectWhereAgentvente(string email, string mdp)
         {
             Agentvente unAgentvente = null;
             string requete = "select * from v_liste_agentvente where email = @email and mdp = @mdp; ";
@@ -281,7 +285,7 @@ namespace Nexthome
                 }
                 catch (Exception exp)
                 {
-                    Debug.WriteLine("Impossible de lire les commerciaux ");
+                    Debug.WriteLine("Impossible de lire les agents ");
                 }
 
                 this.maConnexion.Close();

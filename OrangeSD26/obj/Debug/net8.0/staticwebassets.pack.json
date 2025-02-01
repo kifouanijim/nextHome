@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OrangeSD26.bundle.scp.css",
-      "PackagePath": "staticwebassets\\OrangeSD26.lzruuo08jr.bundle.scp.css"
+      "Id": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Nexthome.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Nexthome.sskdbr3pkc.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\wwwroot\\css\\site.css",
@@ -245,24 +245,24 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OrangeSD26.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Nexthome.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OrangeSD26.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Nexthome.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OrangeSD26.props",
-      "PackagePath": "build\\OrangeSD26.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Nexthome.props",
+      "PackagePath": "build\\Nexthome.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OrangeSD26.props",
-      "PackagePath": "buildMultiTargeting\\OrangeSD26.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Nexthome.props",
+      "PackagePath": "buildMultiTargeting\\Nexthome.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OrangeSD26.props",
-      "PackagePath": "buildTransitive\\OrangeSD26.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Nexthome.props",
+      "PackagePath": "buildTransitive\\Nexthome.props"
     }
   ],
   "ElementsToRemove": []

@@ -35,19 +35,19 @@ namespace Nexthome
         }
         public static Agentvente SelectWhereAgentvente(int idAgent)
         {
-            return unModele.SelectWhereAgentvente(idAgent);
+            return unModele.selectWhereAgentvente(idAgent);
         }
         public static Agentvente SelectWhereAgentvente(string email, string mdp)
         {
-            return unModele.SelectWhereAgentvente(email, mdp);
+            return unModele.selectWhereAgentvente(email, mdp);
         }
         public static List<Agentvente> SelectAllAgentvente()
         {
-            return unModele.SelectAllAgentvente(); 
+            return unModele.selectAllAgentvente(); 
         }
         public static List<Agentvente> SelectLikeAgentvente(String filtre)
         {
-            return unModele.SelectLikeAgentvente(filtre);
+            return unModele.selectLikeAgentvente(filtre);
         }
     }
 }
