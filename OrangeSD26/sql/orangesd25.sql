@@ -1,136 +1,136 @@
-﻿drop database if exists OrangeSD25 ; 
-create database OrangeSD25 ; 
-use OrangeSD25 ; 
+﻿drop database if exists nexthome2 ; 
+create database nexthome2 ; 
+use nexthome2 ; 
 
-create table personne (
-	idpersonne int(5) not null auto_increment, 
+create table agent (
+	idagent int(5) not null auto_increment, 
 	nom varchar(50), 
 	prenom varchar(50), 
 	email varchar(50), 
 	mdp varchar(50), 
-	primary key (idpersonne)
+	primary key (idagent)
 ); 
 
-create table commercial (
-	idpersonne int(5) not null, 
-	secteurAct varchar(50), 
+create table agentvente (
+	idagent int(5) not null, 
+	departement varchar(50), 
 	commission float,
-	primary key(idpersonne), 
-	foreign key(idpersonne) references personne (idpersonne)
+	primary key(idagent), 
+	foreign key(idagent) references agent (idagent)
 	);
-create table technicien (
-	idpersonne int(5) not null, 
+create table agentloc (
+	idagent int(5) not null, 
 	qualification varchar(50), 
 	salaire float,
-	primary key(idpersonne), 
-	foreign key(idpersonne) references personne (idpersonne)
+	primary key(idagent), 
+	foreign key(idagent) references agent (idagent)
 	);
 
 # procedure stockee : insetion dans les deux tables 
 
 delimiter   $
-create procedure insertCommercial (IN p_nom varchar(50), IN p_prenom varchar(50), IN p_email varchar(50), IN p_mdp varchar(50), IN p_secteurAct varchar(50), IN p_commission float )
+create procedure insertagentvente (IN p_nom varchar(50), IN p_prenom varchar(50), IN p_email varchar(50), IN p_mdp varchar(50), IN p_departement varchar(50), IN p_commission float )
 
 begin 
-declare p_idpersonne int ; 
-insert into personne values (null, p_nom, p_prenom, p_email, p_mdp);
-select idpersonne into p_idpersonne from personne where email = p_email and mdp=p_mdp; 
-insert into commercial values (p_idpersonne,p_secteurAct, p_commission);
+declare p_idagent int ; 
+insert into agent values (null, p_nom, p_prenom, p_email, p_mdp);
+select idagent into p_idagent from agent where email = p_email and mdp=p_mdp; 
+insert into agentvente values (p_idagent,p_departement, p_commission);
 
 end $
 
 delimiter  ;
 
-# afficher la liste des commerciaux 
-create view v_liste_commerciaux as (
-select personne.* , commercial.secteurAct, commercial.commission 
-from personne inner join commercial on personne.idpersonne = commercial.idpersonne
+# afficher la liste des agentvente
+create view v_liste_agentvente as (
+select agent.* , agentvente.departement, agentvente.commission 
+from agent inner join agentvente on agent.idagent = agent.idagent
 ); 
 
-# selectionner une personne 
+# selectionner un agent
 delimiter  $
-create procedure avoirPersonne (IN p_idpersonne int)
+create procedure avoiragent (IN p_idagent int)
 begin 
 declare nb int ; 
-select count(*) into nb from commercial where idpersonne = p_idpersonne ; 
+select count(*) into nb from agentvente where idagent = p_idagent ; 
 if nb > 0 then 
-select personne.* , commercial.secteurAct, commercial.commission 
-from personne inner join commercial on commercial.idpersonne = personne.idpersonne and commercial.idpersonne = p_idpersonne ; 
+select agent.* , agentvente.departement, agentvente.commission 
+from agent inner join agentvente on agentvente.idagent = agent.idagent and agentvente.idagent = p_idagent ; 
 else
-select personne.* , technicien.qualification, technicien.salaire 
-from personne inner join technicien on technicien.idpersonne = personne.idpersonne and technicien.idpersonne = p_idpersonne ; 
+select agent.* , agentloc.qualification, agentloc.salaire 
+from agent inner join agentloc on agentloc.idagent = agent.idagent and agentloc.idagent = p_idagent ; 
 end if;
 
 end  $
 delimiter ;
 
-#supprimer un commercial 
+#supprimer un agentvente
 delimiter $ 
-create procedure deleteCommercial (IN p_idpersonne int)
+create procedure deleteAgentvente (IN p_idagent int)
 begin 
-delete from commercial where idpersonne = p_idpersonne; 
-delete from personne where idpersonne = p_idpersonne; 
+delete from agentvente where idagent = p_idagent; 
+delete from agent where idagent = p_idagent; 
 end $
 delimiter  ;
 
-# modifier un commercial 
+# modifier un agentvente
 
 delimiter   $
-create procedure updateCommercial (IN p_idpersonne int, IN p_nom varchar(50), IN p_prenom varchar(50), IN p_email varchar(50), IN p_mdp varchar(50), IN p_secteurAct varchar(50), IN p_commission float )
+create procedure updateAgentvente (IN p_idagent int, IN p_nom varchar(50), IN p_prenom varchar(50), IN p_email varchar(50), IN p_mdp varchar(50), IN p_departement varchar(50), IN p_commission float )
 
 begin 
-update personne set nom=p_nom, prenom=p_prenom, email=p_email, mdp=p_mdp where idpersonne = p_idpersonne; 
-update commercial set secteurAct=p_secteurAct, commission = p_commission where idpersonne = p_idpersonne; 
+update agent set nom=p_nom, prenom=p_prenom, email=p_email, mdp=p_mdp where idagent = p_idagent; 
+update agentvente set departement=p_departement, commission = p_commission where idagent = p_idagent; 
 end $
 delimiter  ; 
 
-#insertion dun technicien 
+#insertion dun agentloc 
 
 delimiter $
-create procedure insertTechnicien(In p_nom varchar(50), In p_prenom varchar(50), In p_email varchar(50), In p_mdp varchar(50), In p_qualification varchar(50), In p_salaire float)
+create procedure insertAgentloc(In p_nom varchar(50), In p_prenom varchar(50), In p_email varchar(50), In p_mdp varchar(50), In p_qualification varchar(50), In p_salaire float)
 begin
-declare p_idpersonne int;
-insert into personne values(null, p_nom, p_prenom, p_email, p_mdp);
-select idpersonne into p_idpersonne from personne where email = p_email and mdp = p_mdp;
-insert into technicien values (p_idpersonne, p_qualification, p_salaire);
+declare p_idagent int;
+insert into agent values(null, p_nom, p_prenom, p_email, p_mdp);
+select idagent into p_idagent from agent where email = p_email and mdp = p_mdp;
+insert into agentloc values (p_idagent, p_qualification, p_salaire);
 end $
 delimiter ;
  
 
-#Liste des techniciens 
+#Liste des agents de location
 
-create view v_liste_techniciens as (
-select personne.*, technicien.qualification, technicien.salaire from personne inner join technicien on personne.idpersonne = technicien.idpersonne
+create view v_liste_agentloc as (
+select agent.*, agentloc.qualification, agentloc.salaire from agent inner join agentloc on agent.idagent = agentloc.idagent
 );
 
-#suppression dun technicien
+#suppression dun agent de location
  
 delimiter $
-create procedure deleteTechnicien (IN p_idpersonne int)
+create procedure deleteagentloc (IN p_idagent int)
 begin
-delete from technicien where idpersonne = p_idpersonne;
-delete from personne where idpersonne = p_idpersonne;
+delete from agentloc where idagent = p_idagent;
+delete from agent where idagent = p_idagent;
 end $
 delimiter ;
 
-#mise à jour du technicien 
+#mise à jour du agent de location
 delimiter $
-create procedure updateTechnicien(In p_idpersonne int, p_nom varchar(50), In p_prenom varchar(50), In p_email varchar(50), In p_mdp varchar(50), In p_qualification varchar(50), In p_salaire float)
+create procedure updateAgentloc(In p_idagent int, p_nom varchar(50), In p_prenom varchar(50), In p_email varchar(50), In p_mdp varchar(50), In p_qualification varchar(50), In p_salaire float)
 begin
-update personne set nom=p_nom, prenom=p_prenom, email=p_email, mdp=p_mdp where idpersonne = p_idpersonne;
-update technicien set qualification=p_qualification, salaire=p_salaire where idpersonne = p_idpersonne;
+update agent set nom=p_nom, prenom=p_prenom, email=p_email, mdp=p_mdp where idagent = p_idagent;
+update agentloc set qualification=p_qualification, salaire=p_salaire where idagent = p_idagent;
 end $
  
 delimiter ;
  
 
-#insertion de commerciaux 
-call insertCommercial("JM","Heder","a@gmail.com","123", "Telecom",2); 
-call insertCommercial("Aramata","Myriam","b@gmail.com","456", "Produits mobiles",5); 
+#insertion des agent de vente
+call insertagentvente("JM","Heder","a@gmail.com","123", "Telecom",2); 
+call insertagentvente("Aramata","Myriam","b@gmail.com","456", "Produits mobiles",5); 
 
-#insertion des techniciens 
-call insertTechnicien("Bormane","Vincent","t@gmail.com","123", "Technicien support",2000); 
-call insertTechnicien("Clement","Fouad","f@gmail.com","456", "Technicien securite",2100);
+#insertion des agent de location
+call insertAgentloc("Bormane","Vincent","t@gmail.com","123", "Technicien support",2000); 
+call insertAgentloc("Clement","Fouad","f@gmail.com","456", "Technicien securite",2100);
 
 
 

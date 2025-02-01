@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrangeSD26")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+147e1876608fdb0f4fc82d8cdb6c0ad678c488a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrangeSD26")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrangeSD26")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
