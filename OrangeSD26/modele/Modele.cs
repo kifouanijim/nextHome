@@ -32,7 +32,7 @@ namespace Nexthome
 			}
 
 		}
-		/******************** Gestion des Commerciaux  ************/
+		/******************** Gestion des agent de ventes  ************/
 		public void insertagentvente(Agentvente unAgentvente)
         {
 			string requete = "call insertagentvente(@nom, @prenom, @email, @mdp, @departement, @commission); ";
@@ -42,7 +42,7 @@ namespace Nexthome
 				this.maConnexion.Open();
 				uneCmde = this.maConnexion.CreateCommand();
 				uneCmde.CommandText = requete;
-				//faire la correspondance entre les variables SQL et les données du commercial
+				
 				uneCmde.Parameters.AddWithValue("@nom", unAgentvente.Nom);
                 uneCmde.Parameters.AddWithValue("@prenom", unAgentvente.Prenom);
                 uneCmde.Parameters.AddWithValue("@email", unAgentvente.Email);

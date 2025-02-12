@@ -1,4 +1,4 @@
-﻿drop database if exists nexthome2 ; 
+﻿Pdrop database if exists nexthome2 ; 
 create database nexthome2 ; 
 use nexthome2 ; 
 

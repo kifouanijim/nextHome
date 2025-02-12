@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1trfNSLxmj6P8u2/ocve7pf7bFySnfNCmM0PhnQU9eU=",
+  "Hash": "D9hvSP/TSdDGnsmpC4qAByKT7ENg/chYZc7LdJKfWsk=",
   "Source": "Nexthome",
   "BasePath": "_content/Nexthome",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "1lv2dou0zg",
+      "Integrity": "ZXn1wS4lhIlL3k3aB8hO6mTrDaafxsywQHaXRy7OFUc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1321,7 +1321,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
+      "Route": "css/site.1lv2dou0zg.css",
       "AssetFile": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1331,7 +1331,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "3996"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1339,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"ZXn1wS4lhIlL3k3aB8hO6mTrDaafxsywQHaXRy7OFUc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 16:45:21 GMT"
+          "Value": "Wed, 12 Feb 2025 13:12:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,7 +1353,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "1lv2dou0zg"
         },
         {
           "Name": "label",
@@ -1361,7 +1361,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-ZXn1wS4lhIlL3k3aB8hO6mTrDaafxsywQHaXRy7OFUc="
         }
       ]
     },
@@ -1376,7 +1376,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "3996"
         },
         {
           "Name": "Content-Type",
@@ -1384,11 +1384,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"ZXn1wS4lhIlL3k3aB8hO6mTrDaafxsywQHaXRy7OFUc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 16:45:21 GMT"
+          "Value": "Wed, 12 Feb 2025 13:12:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1398,7 +1398,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-ZXn1wS4lhIlL3k3aB8hO6mTrDaafxsywQHaXRy7OFUc="
         }
       ]
     },
