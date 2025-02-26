@@ -1,0 +1,184 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Gestion des agents locaux";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Module de gestion des Agents locaux (Ajouter/Suppression/Mise à jour).</p>
+@{
+    string action = "";
+    int idagent = 0;
+    Agentloc leAgentloc = null;
+    if (!string.IsNullOrEmpty(Request.Query["action"]))
+    {
+        action = Request.Query["action"];
+        idagent = Int16.Parse(Request.Query["idagent"]);
+        if (action.Equals("sup"))
+        {
+            Controleur.DeleteAgentloc(idagent);
+        }
+        else if (action.Equals("edit"))
+        {
+            leAgentloc = Controleur.SelectWhereAgentloc(idagent);
+        }
+    }
+}
+<form method="post">
+    <table class="table-rounded">
+        <tr>
+            <td>Nom : </td>
+            <td><input type="text" name="nom" value="@Html.Raw((leAgentloc == null) ? "" : leAgentloc.Nom)" /></td>
+        </tr>
+        <tr>
+            <td>Prénom : </td>
+            <td><input type="text" name="prenom" value="@Html.Raw((leAgentloc == null) ? "" : leAgentloc.Prenom)" /></td>
+        </tr>
+        <tr>
+            <td>Email : </td>
+            <td><input type="text" name="email" value="@Html.Raw((leAgentloc == null) ? "" : leAgentloc.Email)" /></td>
+        </tr>
+        <tr>
+            <td>MDP : </td>
+            <td><input type="password" name="mdp" value="@Html.Raw((leAgentloc == null) ? "" : leAgentloc.Mdp)" /></td>
+        </tr>
+        <tr>
+            <td>Qualification : </td>
+            <td><input type="text" name="qualification" value="@Html.Raw((leAgentloc == null) ? "" : leAgentloc.Qualification)" /></td>
+        </tr>
+        <tr>
+            <td>Salaire : </td>
+            <td><input type="number" name="salaire" value="@Html.Raw((leAgentloc == null) ? "" : leAgentloc.Salaire)" /></td>
+        </tr>
+        <tr>
+            <td><input type="reset" name="Annuler" value="Annuler" /></td>
+            <td><input type="submit" @Html.Raw((leAgentloc == null) ? " name='Valider' value='Valider' " : " name='Modifier' value='Modifier' ") /></td>
+        </tr>
+    </table>
+</form>
+
+@{
+    string nom, prenom, email, mdp, qualification;
+    float salaire;
+    string message = "";
+    if (Request.Method == "POST" && !string.IsNullOrEmpty(Request.Form["Modifier"]))
+    {
+        idagent = Int16.Parse(Request.Query["idagent"]);
+        nom = Request.Form["nom"];
+        prenom = Request.Form["prenom"];
+        email = Request.Form["email"];
+        mdp = Request.Form["mdp"];
+        qualification = Request.Form["qualification"];
+        List<string> donnees = new List<string>
+        {
+            nom,
+            prenom,
+            email,
+            mdp,
+            qualification,
+            Request.Form["salaire"]
+        };
+        if (Controleur.ControlerDonnees(donnees))
+        {
+            try
+            {
+                salaire = float.Parse(Request.Form["salaire"]);
+            }
+            catch (NotFiniteNumberException exp)
+            {
+                salaire = 0;
+            }
+            Agentloc unAgentloc = new Agentloc(idagent, nom, prenom, email, mdp, qualification, salaire);
+            Controleur.UpdateAgentloc(unAgentloc);
+            message = "Modification réussie de l'agent local.";
+        }
+        else
+        {
+            message = "Veuillez remplir tous les champs.";
+        }
+    }
+    if (Request.Method == "POST" && !string.IsNullOrEmpty(Request.Form["Valider"]))
+    {
+        nom = Request.Form["nom"];
+        prenom = Request.Form["prenom"];
+        email = Request.Form["email"];
+        mdp = Request.Form["mdp"];
+        qualification = Request.Form["qualification"];
+        List<string> donnees = new List<string>
+        {
+            nom,
+            prenom,
+            email,
+            mdp,
+            qualification,
+            Request.Form["salaire"]
+        };
+        if (Controleur.ControlerDonnees(donnees))
+        {
+            try
+            {
+                salaire = float.Parse(Request.Form["salaire"]);
+            }
+            catch (NotFiniteNumberException exp)
+            {
+                salaire = 0;
+            }
+            Agentloc unAgentloc = new Agentloc(nom, prenom, email, mdp, qualification, salaire);
+            Controleur.InsertAgentloc(unAgentloc);
+            message = "Insertion réussie de l'agent local.";
+        }
+        else
+        {
+            message = "Veuillez remplir tous les champs.";
+        }
+    }
+}
+@Html.Raw(message)
+
+Filtre : <form method="post">
+    <input type="text" name="filtre" />
+    <input type="submit" name="Filtrer" value="Filtrer" />
+</form>
+<br />
+
+<table border="1">
+    <tr>
+        <td>Id Agent</td>
+        <td>Nom</td>
+        <td>Prénom</td>
+        <td>Email</td>
+        <td>Qualification</td>
+        <td>Salaire</td>
+        <td>Operations</td>
+    </tr>
+
+    @{
+        string chaine = "";
+        List<Agentloc> lesAgentloc = null;
+        if (Request.Method == "POST" && !string.IsNullOrEmpty(Request.Form["Filtrer"]))
+        {
+            string filtre = Request.Form["filtre"];
+            lesAgentloc = Controleur.SelectLikeAgentloc(filtre);
+        }
+        else
+        {
+            lesAgentloc = Controleur.SelectAllAgentloc();
+        }
+        foreach (Agentloc unAgent in lesAgentloc)
+        {
+            chaine += "<tr><td>" + unAgent.IdAgent + "</td>";
+            chaine += "<td>" + unAgent.Nom + "</td>";
+            chaine += "<td>" + unAgent.Prenom + "</td>";
+            chaine += "<td>" + unAgent.Email + "</td>";
+            chaine += "<td>" + unAgent.Qualification + "</td>";
+            chaine += "<td>" + unAgent.Salaire + "</td>";
+            chaine += "<td>";
+            chaine += "<a href='Agentloc?action=sup&idagent=" + unAgent.IdAgent + "'> Supprimer </a>";
+            chaine += "<a href='Agentloc?action=edit&idagent=" + unAgent.IdAgent + "'> Modifier </a>";
+            chaine += "</td>";
+            chaine += "</tr>";
+        }
+    }
+
+    @Html.Raw(chaine)
+</table>

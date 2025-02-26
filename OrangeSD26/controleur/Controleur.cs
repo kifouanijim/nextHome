@@ -49,6 +49,44 @@ namespace Nexthome
         {
             return unModele.selectLikeAgentvente(filtre);
         }
+        // Functions for Agentloc (added functions)
+        public static void InsertAgentloc(Agentloc unAgentloc)
+        {
+            //on controle les données de l'agent locataire avant insertion
+            unModele.insertAgentloc(unAgentloc);
+        }
+
+        public static void UpdateAgentloc(Agentloc unAgentloc)
+        {
+            //on controle les données de l'agent locataire avant mise à jour
+            unModele.updateAgentloc(unAgentloc);
+        }
+
+        public static void DeleteAgentloc(int idAgentloc)
+        {
+            unModele.deleteAgentloc(idAgentloc);
+        }
+
+        public static Agentloc SelectWhereAgentloc(int idAgent)
+        {
+            return unModele.selectWhereAgentloc(idAgent);
+        }
+
+        public static Agentloc SelectWhereAgentloc(string email, string mdp)
+        {
+            return unModele.selectWhereAgentloc(email, mdp);
+        }
+
+        public static List<Agentloc> SelectAllAgentloc()
+        {
+            return unModele.selectAllAgentloc();
+        }
+
+        public static List<Agentloc> SelectLikeAgentloc(string filtre)
+        {
+            return unModele.selectLikeAgentloc(filtre);
+        }
     }
 }
+  
 

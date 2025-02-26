@@ -1,70 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fouad\\source\\repos\\nextHome\\",
+  "WorkspaceRootPath": "D:\\nextHome\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\modele\\modele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|d:\\nexthome\\orangesd26\\modele\\modele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\modele\\modele.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\controleur\\controleur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\controleur\\controleur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\pages\\agentvente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\agentvente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\pages\\connexion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\connexion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\sql\\orangesd25.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\sql\\orangesd25.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\nexthome.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\nexthome.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\controleur\\agentvente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|d:\\nexthome\\orangesd26\\controleur\\agentvente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\controleur\\agentvente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\controleur\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\controleur\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\controleur\\agentloc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|d:\\nexthome\\orangesd26\\controleur\\agentloc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\controleur\\agentloc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|c:\\users\\fouad\\source\\repos\\nexthome\\orangesd26\\sql\\orangesd25.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\sql\\orangesd25.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|d:\\nexthome\\orangesd26\\pages\\agentvente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\agentvente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|d:\\nexthome\\orangesd26\\pages\\agentloc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\agentloc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|d:\\nexthome\\orangesd26\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|d:\\nexthome\\orangesd26\\controleur\\controleur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF31DCEB-791B-44CE-A0C6-5B36E225E218}|OrangeSD26\\Nexthome.csproj|solutionrelative:orangesd26\\controleur\\controleur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,194 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "OrangeSD26\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "OrangeSD26\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAH8AAACAZmZmZmYawJkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-12T12:54:04.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "OrangeSD26\\Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Controleur.cs",
+              "DocumentMoniker": "D:\\nextHome\\OrangeSD26\\controleur\\Controleur.cs",
+              "RelativeDocumentMoniker": "OrangeSD26\\controleur\\Controleur.cs",
+              "ToolTip": "D:\\nextHome\\OrangeSD26\\controleur\\Controleur.cs",
+              "RelativeToolTip": "OrangeSD26\\controleur\\Controleur.cs",
+              "ViewState": "AgIAAFEAAACArsjO3sgowFoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:35:45.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Agentvente.cshtml",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Agentvente.cshtml",
-              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Agentvente.cshtml",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Agentvente.cshtml",
-              "RelativeToolTip": "OrangeSD26\\Pages\\Agentvente.cshtml",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAcwLgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-22T16:56:56.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Connexion.cshtml",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Connexion.cshtml",
-              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Connexion.cshtml",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Connexion.cshtml",
-              "RelativeToolTip": "OrangeSD26\\Pages\\Connexion.cshtml",
-              "ViewState": "AgIAABsAAABAZmZmZmYkwDkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-28T16:53:29.64Z",
+              "WhenOpened": "2025-02-26T13:22:39.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\nextHome\\OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\nextHome\\OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "OrangeSD26\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAswBUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-22T16:50:36.312Z",
+              "WhenOpened": "2025-02-26T13:21:08.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "orangesd25.sql ",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\sql\\orangesd25.sql",
-              "RelativeDocumentMoniker": "OrangeSD26\\sql\\orangesd25.sql",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\sql\\orangesd25.sql",
-              "RelativeToolTip": "OrangeSD26\\sql\\orangesd25.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-01T13:02:47.56Z",
+              "DocumentIndex": 4,
+              "Title": "Agentloc.cshtml",
+              "DocumentMoniker": "D:\\nextHome\\OrangeSD26\\Pages\\Agentloc.cshtml",
+              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Agentloc.cshtml",
+              "ToolTip": "D:\\nextHome\\OrangeSD26\\Pages\\Agentloc.cshtml",
+              "RelativeToolTip": "OrangeSD26\\Pages\\Agentloc.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T13:12:15.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Error.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Error.cshtml.cs",
-              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Error.cshtml.cs",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Error.cshtml.cs",
-              "RelativeToolTip": "OrangeSD26\\Pages\\Error.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:34:18.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Controleur.cs",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\controleur\\Controleur.cs",
-              "RelativeDocumentMoniker": "OrangeSD26\\controleur\\Controleur.cs",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\controleur\\Controleur.cs",
-              "RelativeToolTip": "OrangeSD26\\controleur\\Controleur.cs",
-              "ViewState": "AgIAABEAAADAzMzMzMwnwBgAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T16:55:09.022Z",
+              "DocumentIndex": 3,
+              "Title": "Agentvente.cshtml",
+              "DocumentMoniker": "D:\\nextHome\\OrangeSD26\\Pages\\Agentvente.cshtml",
+              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Agentvente.cshtml",
+              "ToolTip": "D:\\nextHome\\OrangeSD26\\Pages\\Agentvente.cshtml",
+              "RelativeToolTip": "OrangeSD26\\Pages\\Agentvente.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T13:10:25.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Modele.cs",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\modele\\Modele.cs",
+              "DocumentMoniker": "D:\\nextHome\\OrangeSD26\\modele\\Modele.cs",
               "RelativeDocumentMoniker": "OrangeSD26\\modele\\Modele.cs",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\modele\\Modele.cs",
+              "ToolTip": "D:\\nextHome\\OrangeSD26\\modele\\Modele.cs",
               "RelativeToolTip": "OrangeSD26\\modele\\Modele.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T16:55:20.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Privacy.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Privacy.cshtml.cs",
-              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\Privacy.cshtml.cs",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\Privacy.cshtml.cs",
-              "RelativeToolTip": "OrangeSD26\\Pages\\Privacy.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Agentvente.cs",
+              "DocumentMoniker": "D:\\nextHome\\OrangeSD26\\controleur\\Agentvente.cs",
+              "RelativeDocumentMoniker": "OrangeSD26\\controleur\\Agentvente.cs",
+              "ToolTip": "D:\\nextHome\\OrangeSD26\\controleur\\Agentvente.cs",
+              "RelativeToolTip": "OrangeSD26\\controleur\\Agentvente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T16:35:58.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "OrangeSD26\\Pages\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "OrangeSD26\\Pages\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:36:22.32Z",
+              "WhenOpened": "2025-02-01T14:42:34.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Agent.cs",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\controleur\\Agent.cs",
-              "RelativeDocumentMoniker": "OrangeSD26\\controleur\\Agent.cs",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\controleur\\Agent.cs",
-              "RelativeToolTip": "OrangeSD26\\controleur\\Agent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:25:19.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Agentvente.cs",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\controleur\\Agentvente.cs",
-              "RelativeDocumentMoniker": "OrangeSD26\\controleur\\Agentvente.cs",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\controleur\\Agentvente.cs",
-              "RelativeToolTip": "OrangeSD26\\controleur\\Agentvente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:42:34.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "Agentloc.cs",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\controleur\\Agentloc.cs",
+              "DocumentMoniker": "D:\\nextHome\\OrangeSD26\\controleur\\Agentloc.cs",
               "RelativeDocumentMoniker": "OrangeSD26\\controleur\\Agentloc.cs",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\controleur\\Agentloc.cs",
+              "ToolTip": "D:\\nextHome\\OrangeSD26\\controleur\\Agentloc.cs",
               "RelativeToolTip": "OrangeSD26\\controleur\\Agentloc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T14:47:01.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Nexthome.csproj",
-              "DocumentMoniker": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Nexthome.csproj",
-              "RelativeDocumentMoniker": "OrangeSD26\\Nexthome.csproj",
-              "ToolTip": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Nexthome.csproj",
-              "RelativeToolTip": "OrangeSD26\\Nexthome.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-22T16:53:18.867Z",
+              "WhenOpened": "2025-02-01T14:47:01.722Z",
               "EditorCaption": ""
             }
           ]

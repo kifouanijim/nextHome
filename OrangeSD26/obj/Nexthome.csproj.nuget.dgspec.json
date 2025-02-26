@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Nexthome.csproj": {}
+    "D:\\nextHome\\OrangeSD26\\Nexthome.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Nexthome.csproj": {
+    "D:\\nextHome\\OrangeSD26\\Nexthome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Nexthome.csproj",
+        "projectUniqueName": "D:\\nextHome\\OrangeSD26\\Nexthome.csproj",
         "projectName": "Nexthome",
-        "projectPath": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\Nexthome.csproj",
-        "packagesPath": "C:\\Users\\fouad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fouad\\source\\repos\\nextHome\\OrangeSD26\\obj\\",
+        "projectPath": "D:\\nextHome\\OrangeSD26\\Nexthome.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\nextHome\\OrangeSD26\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fouad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
